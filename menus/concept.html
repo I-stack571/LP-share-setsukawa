@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Yamamoto Bakery</title>
+</head>
+<body>
+    <header class="header">
+        <a href="/" class="header-logo">
+            <img src="../images/company logo.webp">
+        </a>
+        <nav class="header-nav">
+            <input id="header-nav-input" type="checkbox">
+            <label class="header-nav-menu" for="header-nav-input"></label>
+            <ul>
+            <li>
+                <a href="./menus/concept.html" target="_blank" rel="noopener">concept</a>
+            </li>
+            <li>
+                <a href="リンク先" target="_blank" rel="noopener">メニュー</a>
+            </li>
+            <li>
+                <a href="リンク先" target="_blank" rel="noopener">店舗案内</a>
+            </li>
+            <li>
+                <a href="リンク先" target="_blank" rel="noopener">メニュー4</a>
+            </li>
+            <li>
+                <a href="リンク先" target="_blank" rel="noopener">メニュー5</a>
+            </li>
+            <li>
+                <a th:href="${pages['p0XXXXX']?.path ?:'/404'}">ログイン</a>
+            </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Yamamoto Bakeryのコンセプト</h1>
+                <p>「毎日が特別な日になる、そんなパンを届けたい。」</p>
+            </div>
+        </section>
+
+        <section class="concept-section">
+            <div class="concept-content">
+                <h2>天然酵母と厳選素材</h2>
+                <p>
+                    Yamamoto Bakeryでは、天然酵母を使用し、厳選された素材で作るパンを提供しています。無添加で体に優しいパン作りにこだわり、毎日新鮮なパンを焼き上げています。小麦粉は国内産にこだわり、フルーツや野菜も旬のものを取り入れています。
+                </p>
+            </div>
+            <div class="concept-image">
+                <img src="../images/天然酵母パン.webp" alt="天然酵母パン">
+            </div>
+        </section>
+
+        <section class="concept-section">
+            <div class="concept-content">
+                <h2>手作りの温もり</h2>
+                <p>
+                    一つ一つ手作りで仕上げるYamamoto Bakeryのパンには、職人のこだわりと温もりが詰まっています。丁寧な仕込みと、時間をかけてじっくりと発酵させることで、独特の風味と食感を実現しています。私たちは、お客様に安心して召し上がっていただけるパンをお届けすることを使命としています。
+                </p>
+            </div>
+            <div class="concept-image">
+                <img src="../images/handmade_bread.jpg" alt="手作りパン">
+            </div>
+        </section>
+
+        <section class="concept-section">
+            <div class="concept-content">
+                <h2>地域に根ざしたパン屋</h2>
+                <p>
+                    Yamamoto Bakeryは、地域の皆さまに愛されるパン屋であり続けることを目指しています。地元の食材を積極的に取り入れ、季節ごとに新しいメニューを考案しています。また、地域イベントへの参加や、コミュニティとの交流も大切にしています。
+                </p>
+            </div>
+            <div class="concept-image">
+                <img src="../images/community_bakery.jpg" alt="地域に根ざしたパン屋">
+            </div>
+        </section>
+
+        <section class="concept-section">
+            <div class="concept-content">
+                <h2>サステナビリティへの取り組み</h2>
+                <p>
+                    私たちは、環境への配慮を忘れずにパン作りを行っています。食品ロスを減らすための取り組みや、エコな包装材の使用など、持続可能な未来を見据えた活動を行っています。Yamamoto Bakeryでは、未来の世代に美味しいパンを届けるために、できることからコツコツと取り組んでいます。
+                </p>
+            </div>
+            <div class="concept-image">
+                <img src="../images/sustainable_bakery.jpg" alt="サステナビリティ">
+            </div>
+        </section>
+
+        <section class="concept-section">
+            <div class="concept-content">
+                <h2>お客様の声に耳を傾けて</h2>
+                <p>
+                    お客様の声を大切にし、常に進化を続けるYamamoto Bakery。アンケートやヒアリングを通じて、お客様のニーズに応え、新しい商品開発やサービス向上に努めています。皆さまの「美味しかった」という笑顔が、私たちの何よりの励みです。
+                </p>
+            </div>
+            <div class="concept-image">
+                <img src="../images/customer_feedback.jpg" alt="お客様の声">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Yamamoto Bakery. All rights reserved.</p>
+    </footer>
+</body>
+<script src="./script.js"></script>
+</html>
