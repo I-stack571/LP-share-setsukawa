@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <a href="ロゴクリック時のリンク先" class="header-logo">
+            <img src="ロゴ画像のURL">
+        </a>
+        <nav class="header-nav">
+            <input id="header-nav-input" type="checkbox">
+            <label class="header-nav-menu" for="header-nav-input"></label>
+            <ul>
+            <li>
+                <a href="リンク先" target="_blank" rel="noopener">メニュー１</a>
+            </li>
+            <li>
+                <a href="リンク先" target="_blank" rel="noopener">メニュー２</a>
+            </li>
+            <li>
+                <a th:href="${pages['p0XXXXX']?.path ?:'/404'}">ログイン</a>
+            </li>
+            </ul>
+        </nav>
+    </header>
+</body>
+<script src="./script.js"></script>
+</html>
